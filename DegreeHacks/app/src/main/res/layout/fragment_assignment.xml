@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/fragment_padding"
+    android:paddingRight="@dimen/fragment_padding"
+    android:paddingBottom="@dimen/fragment_padding"
+    android:backgroundTint="#e0e0e0"
+    android:layout_marginTop="@dimen/fragment_spacing"
+    android:layout_marginLeft="@dimen/fragment_spacing"
+    android:layout_marginStart="@dimen/fragment_spacing"
+    android:layout_marginRight="@dimen/fragment_spacing"
+    android:layout_marginEnd="@dimen/fragment_spacing"
+    android:layout_height="wrap_content"
+    android:background="#cec9c9">
+    <TextView
+        android:id="@+id/assignment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Essays: "
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/weight_display"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/assignment_title"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="X% of total grade"/>
+
+    <LinearLayout
+        android:id="@+id/grades_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/weight_display"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/grades_title"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="Grades: "/>
+        <TextView
+            android:id="@+id/grades_display"
+            android:layout_width="0px"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Grades List......."/>
+        <EditText
+            android:id="@+id/et_grades_display"
+            android:inputType="numberDecimal"
+            android:digits="0123456789,. "
+            android:layout_width="0px"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/average_group"
+        android:layout_width="match_parent"
+        android:layout_below="@id/grades_group"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/average_title"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="Average: "/>
+        <TextView
+            android:id="@+id/average_display"
+            android:layout_width="0px"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Average"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/edit_assign_button"
+        android:layout_below="@id/average_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"/>
+    <Button
+        android:id="@+id/save_assign_button"
+        android:layout_below="@id/average_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Save"/>
+    <Button
+        android:id="@+id/delete_assign_button"
+        android:layout_below="@id/average_group"
+        android:layout_toRightOf="@id/edit_assign_button"
+        android:layout_toEndOf="@id/edit_assign_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"/>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/grade_tracker"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Grade Tracker" />
+        <item
+            android:id="@+id/gpa_calculator"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="GPA Calculator" />
+
+        <item
+            android:id="@+id/notes_item"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="" />
+        </menu>
+    </item>
+
+</menu>

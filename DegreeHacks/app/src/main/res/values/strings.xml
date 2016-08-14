@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Degree Hacks</string>
+    <string name="hide">0dp</string>
+    <string name="title_activity_base_drawer">BaseDrawerActivity</string>
+    <string name="explain_grade_tracker">Add the class whose grade you want to keep
+    track of here.  Have your Syllabus ready to put in assigment/test weight values.
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aandroid="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/add_classroom_fragment"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:hint="Enter Assignment Name (Homework, Projects, Test 1, etc)"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/et_assignment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter Grades, seperated by commas."
+        android:inputType="numberDecimal"
+        android:digits="0123456789,."
+        android:id="@+id/et_grades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter Weight towards class Grade (%)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789,."
+        android:id="@+id/et_assignment_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_add_assignment"
+            android:text="Add"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

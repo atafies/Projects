@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:parentActivityName="MainActivity"
+    tools:context=".GradeTrackerActivity">
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/explain_grade_tracker"/>
+
+    <Button
+        android:id="@+id/add_class_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add Class"
+        android:onClick="addClassroom"/>
+    <LinearLayout
+        android:id="@+id/classroom_list_view"
+        android:layout_width="match_parent"
+        android:layout_below="@id/description_text"
+        android:orientation="vertical"
+        android:layout_above="@id/add_class_button"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
